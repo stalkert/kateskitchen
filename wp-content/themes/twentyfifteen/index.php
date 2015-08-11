@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * The main template file
  *
@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					<h2>Ìîè ïåðâûé èçìåíåíèÿ ÷åðåç Git</h2>
+					<h2>ГЊГ®ГЁ ГЇГҐГ°ГўГ»Г© ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГї Г·ГҐГ°ГҐГ§ Git</h2>
 					<h3>Second</h3>
 				</header>
 			<?php endif; ?>
