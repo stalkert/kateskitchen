@@ -25,7 +25,7 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 					<h2>первые изменения через Git</h2>
-					<h3>Second,четвертое</h3>
+					<h3>четвертое, шестое</h3>
 				</header>
 			<?php endif; ?>
 
