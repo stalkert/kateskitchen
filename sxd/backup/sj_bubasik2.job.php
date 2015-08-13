@@ -7,7 +7,7 @@ $JOB = array (
   'strategy' => '0',
   'correct' => '0',
   'autoinc' => '0',
-  'job' => 'bubasik',
+  'job' => 'bubasik2',
   'title' => '130815',
 );
 ?>
