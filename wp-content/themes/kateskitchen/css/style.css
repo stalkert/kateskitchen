@@ -1,0 +1,17 @@
+
+header{
+    position:relative;
+}
+#logobook{
+    position:absolute;
+    width: 28%;
+
+}
+#logocup {
+    position:absolute;
+    right:2%;
+}
+#namesite{
+    position:absolute;
+    left:30%;
+}
