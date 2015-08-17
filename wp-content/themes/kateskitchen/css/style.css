@@ -1,6 +1,15 @@
-
+body {
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+}
 header{
     position:relative;
+    height: 12em;
+
 }
 #logobook{
     position:absolute;
@@ -14,4 +23,44 @@ header{
 #namesite{
     position:absolute;
     left:30%;
+    top: 1.6em;
+}
+#namesite a{
+    color: #c82c28;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-decoration: none;
+}
+#namesite p{
+    font-size:1.2em;
+    margin-left: 3em;
+}
+#search{
+    position: absolute;
+    left: 18%;
+    top:9em;
+}
+#submit_search{
+    background: url("../img/search.png") top left no-repeat;
+    background-size: 3em 1.7em;
+    width: 3em;
+    height: 2em;
+    margin-top:-0.7em;
+}
+#navbar{
+margin-left: 5em;
+}
+#navbar li a{
+    font-size: 1.3em;
+    color:black;
+}
+.active a{
+    background-color: #c82c28!important;
+    color: #ffffff!important;
+
+}
+#dotted{
+    border-bottom: 3px dotted black;
+    margin-bottom: 1em;
 }
