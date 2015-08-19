@@ -6,7 +6,7 @@ body {
     color: #333;
     background-color: #fff;
 }
-header{
+#header{
     position:relative;
     height: 12em;
 
@@ -34,26 +34,34 @@ header{
 }
 #namesite p{
     font-size:1.2em;
-    margin-left: 3em;
+    margin-left: 2.6em;
+    margin-top:-0.5em;
 }
 #search{
     position: absolute;
     left: 18%;
-    top:9em;
+    top:10em;
+
+}
+#input_search{
+    height: 25px;
 }
 #submit_search{
-    background: url("../img/search.png") top left no-repeat;
-    background-size: 3em 1.7em;
-    width: 3em;
-    height: 2em;
-    margin-top:-0.7em;
+    height: 25px;
+    padding: 0 5px;
+    background-color:#c82c28;
+    color:white;
+    border-color: #A5A1A1;
+
+
 }
 #navbar{
-margin-left: 5em;
+    margin-left: 5em;
 }
 #navbar li a{
     font-size: 1.3em;
     color:black;
+    border-radius: 8px;
 }
 .active a{
     background-color: #c82c28!important;
@@ -62,5 +70,39 @@ margin-left: 5em;
 }
 #dotted{
     border-bottom: 3px dotted black;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
+#recepty{
+
+
+    padding: 0;
+    border-right: 1px solid #e5e5e5;
+
+}
+#recepty li a{
+    color: #5f504c;
+    font-size: 1.15em;
+    font-weight: normal;
+    padding-left:25px;
+}
+#recepty li a:hover{
+    text-decoration: underline;
+    background-color: white;
+
+}
+.left{
+    float: left;
+    display:block;
+    padding-top: 13px;
+}
+.divider{
+    border-bottom: 1px solid #e3e3e3;
+    margin-left: 25px!important;
+}
+#left-menu{
+    padding-left: 0;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
