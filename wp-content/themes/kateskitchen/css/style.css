@@ -68,7 +68,7 @@ body {
     color: #ffffff!important;
 
 }
-#dotted{
+.dotted{
     border-bottom: 3px dotted black;
     margin: 1em 0;
 }
@@ -105,4 +105,30 @@ body {
 .margin-bottom{
     margin-bottom: 10px;
 }
-
+.title1{
+    margin: 0 0 10px 0 ;
+    padding: 0 0 0 5px;
+    color: #347b0b;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+#kate{
+    width: 100%;
+    height: auto;
+}
+.foto_prev{
+    width:35%;
+    height: auto;
+    float:left;
+    margin-right: 10px;
+}
+.post h3{
+    color: #c82c28;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 0 0 10px 10px;
+}
+.red{
+    color:#c82c28;
+    margin-left: 20px;
+}
