@@ -7,5 +7,7 @@ $(document).ready(function(){
         $(this).addClass("active");
         $("#navbar li")
     });
-    $('.carousel').carousel();
+    $('.carousel').carousel({
+        interva: "hover"
+    });
 });
