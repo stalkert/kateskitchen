@@ -11,13 +11,13 @@
 <body>
     <div class="container">
         <div class="row">
-            <div  id="header" class="col-md-12">
+            <div  id="header" class="col-md-12 ">
                 <img id="logobook" src="img/book.png">
                 <div id="namesite" >
                     <h1><a href="/" title="Главная">Катина Кухня</a></h1>
                     <p id="slogan">от New York Times Cook Book</p>
                 </div>
-                <div  id="search" class="col-md-3">
+                <div  id="search" class="col-md-3 col-xs-8 col-sm-6">
                     <div class="input-group">
                         <input  id="input_search" type="text" class="form-control">
                           <span class="input-group-btn">
@@ -52,72 +52,81 @@
             <div class="col-md-3" id="left-menu">
                 <ul id="recepty" class="nav nav-pills nav-stacked">
                     <h2 class="title1 red">Рецепты</h2>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Напитки, Коктейли, Пунши и Гроги</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Горячие закуски, Легкие закуски и Маленькие блюда</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Супы</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Салаты</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Картофель, Кукуруза, Бобы</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Паста,Рис, Зерновые и Фарши(Начинки)</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Сендвичи, Пицца и Закусочные Пироги</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Домашняя птица и Дичь</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Говядина,Телятина, Баранина, Свинина</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Соусы, Приправы, Специи, Маринады и Консервы </a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Завтраки и Бранчи</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Хлеб и Выпечка </a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Печенья и Конфеты </a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Холодные Десерты</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Кексы, пироги </a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Пироги, Торты, и Другие Десерты</a></li>
                     <li class="divider"></li>
-                    <span class="glyphicon glyphicon-star-empty left"></span>
+                    <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Наши рецепты для американцев</a></li>
 
                 </ul>
 
             </div>
             <div class="col-md-6">
-                <div id="myCarousel" class="carousel slide">
-                    <!-- Carousel items -->
+                <div id="carousel-example-generic" class="carousel slide">
+                     <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="active item"><img src="img/50.jpg"></div>
                         <div class="item"><img src="img/60.jpg"></div>
                         <div class="item"><img src="img/70.jpg"></div>
                     </div>
                     <!-- Carousel nav -->
-                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
                 </div>
+
                 <div>
                     <h2>
                         Свежие рецепты этой недели

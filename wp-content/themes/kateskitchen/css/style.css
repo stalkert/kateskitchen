@@ -1,3 +1,13 @@
+@media screen and (max-width: 640px) {
+    #namesite a{
+        font-size: 0.9em!important;
+    }
+    #namesite p{
+        font-size: 0.8em!important;
+        margin-left: 1.6em!important;
+    }
+}
+
 body {
     margin: 0;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -19,10 +29,12 @@ body {
 #logocup {
     position:absolute;
     right:2%;
+    width:20%;
 }
 #namesite{
     position:absolute;
     left:30%;
+    width:52%;
     top: 1.6em;
 }
 #namesite a{
@@ -83,17 +95,21 @@ body {
     color: #5f504c;
     font-size: 1.15em;
     font-weight: normal;
-    padding-left:25px;
+    margin-left:25px;
+    padding-left: 0;
 }
 #recepty li a:hover{
     text-decoration: underline;
     background-color: white;
 
 }
-.left{
+.left_menu{
     float: left;
     display:block;
     padding-top: 13px;
+}
+.left_menu:hover{
+
 }
 .divider{
     border-bottom: 1px solid #e3e3e3;
