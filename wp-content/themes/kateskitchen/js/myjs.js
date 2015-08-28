@@ -10,4 +10,16 @@ $(document).ready(function(){
     $('.carousel').carousel({
         interva: "hover"
     });
+    $(".button_head_menu").click(function(){
+        $("#navbar").addClass("nav-stacked");
+    });
+    $(window).on('load resize',windowSize);
+    function windowSize(){
+        if($(window).width()>=768){
+            $("#navbar").removeClass("nav-stacked");
+        }else {
+            $("#navbar").addClass("nav-stacked");
+        }
+    }
+
 });
