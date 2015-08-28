@@ -28,14 +28,25 @@
 
 
                 <img id="logocup" src="img/cup.jpg">
+                <div id="langselector">
+                    <a href="http://kateskitchen.ru" id="ru_lang" class="lang_active">ru</a> | <a href="http://kateskitchen.us" id="en_lang" class="lang_inactive">en</a>
+                </div>
             </div>
         </div>
         <div class="row margin-bottom">
             <div class="col-md-12 dotted"></div>
         </div>
         <div class="row margin-bottom">
-            <div class="col-md-12">
-                <ul id="navbar" class="nav nav-pills pull-left">
+            <div class="navbar">
+            <div class="container">
+                <button type="button" class="navbar-toggle button_head_menu"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        >
+
+                    <i class="glyphicon glyphicon-align-justify gl_size"></i>
+                </button>
+                <ul id="navbar" class="nav  nav-pills  pull-left collapse navbar-collapse">
                     <li class="active"><a href="#">Главная</a></li>
                     <li><a href="#">О проекте</a></li>
                     <li><a href="#">Рецепты</a></li>
@@ -43,6 +54,7 @@
                     <li><a href="#">Контакты</a></li>
 
                 </ul>
+            </div>
             </div>
 
 
@@ -106,7 +118,7 @@
                 </ul>
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id="content">
                 <div id="carousel-example-generic" class="carousel slide">
                      <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -136,13 +148,27 @@
                         <h3>ОВСЯНОЕ ПЕЧЕНЬЕ</h3>
                         <img src="img/pre_50.JPG" class="foto_prev">
                         <p>Хрустящие, полезные, вкусные и, безусловный плюс, легкие в приготовление печенья!</p>
-                        <p>17 фото</p>
-                        <p>»Подробнее  1 Comment</p>
+                        <p class="post_amount_photo">17 фото</p>
+                        <p class="amount_comment">»Подробнее  1 Comment</p>
+                    </div>
+                    <div class="post">
+                        <h3>ПЕЧЕНЬЕ С МАННОЙ КРУПОЙ "ЗАГАДКА"</h3>
+                        <img src="img/pre_50.JPG" class="foto_prev">
+                        <p>Удивительное, суперхрустящее, печенье загадка! </p>
+                        <p class="post_amount_photo">13 фото</p>
+                        <p class="amount_comment">»Подробнее  0 Comment</p>
+                    </div>
+                    <div class="post">
+                        <h3>ГРЕНКИ НЕМЕЦКИЕ</h3>
+                        <img src="img/pre_50.JPG" class="foto_prev">
+                        <p>Горячие, мягкие и хрустящие, сладкие и сочные, это гренки! Это лакомство!</p>
+                        <p class="post_amount_photo">20 фото</p>
+                        <p class="amount_comment">»Подробнее  2 Comment</p>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" id="left_sidebar">
                 <div>
                     <h2 class="title1">О проекте</h2>
                     <p>Сайт Катина Кухня посвящен книге  The Essential New York Times Cook Book .</p>
@@ -159,6 +185,7 @@
         </div>
     </div>
     <script src="js/jquery-1.11.3.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/myjs.js"></script>
 </body>

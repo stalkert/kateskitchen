@@ -7,6 +7,11 @@
         margin-left: 1.6em!important;
     }
 }
+@media screen and (max-width: 994px){
+    #navbar{
+        margin-left: 1em!important;
+    }
+}
 
 body {
     margin: 0;
@@ -28,7 +33,7 @@ body {
 }
 #logocup {
     position:absolute;
-    right:2%;
+    right:3%;
     width:20%;
 }
 #namesite{
@@ -142,9 +147,37 @@ body {
     color: #c82c28;
     font-size: 1.8em;
     font-weight: normal;
-    margin: 0 0 10px 10px;
+    margin: 10px;
 }
 .red{
     color:#c82c28;
     margin-left: 20px;
+}
+#langselector {
+    position: absolute;
+    bottom: 0.3em;
+    right: 10px;
+    color: #917972;
+}
+#ru_lang, #en_lang {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.post{
+    overflow: hidden;
+    border-bottom: 1px solid #e3e3e3;
+
+    padding-bottom: 10px;
+}
+#left_sidebar{
+    border-left: 1px solid #e3e3e3;
+
+}
+.gl_size{
+  font-size: 1.3em!important;
+    color:#c82c28;
+}
+.button_head_menu{
+    border:2px solid #c82c28!important;
+    margin-top: 0;
 }
