@@ -1,4 +1,4 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 660px) {
     #namesite a{
         font-size: 0.9em!important;
     }
@@ -180,4 +180,26 @@ body {
 .button_head_menu{
     border:2px solid #c82c28!important;
     margin-top: 0;
+}
+.dysplay_none{
+    display: none;
+}
+.dysplay_block{
+    display: block;
+}
+#button_left_menu{
+    position: relative;
+    width:97%;
+    background-color:#c82c28 ;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 2em;
+}
+#caret_left_menu{
+    position:absolute;
+    right:5%;
+    top:50%;
+    margin-right: 10px;
+
 }
