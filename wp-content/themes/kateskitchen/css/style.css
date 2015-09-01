@@ -93,7 +93,7 @@ body {
 
 
     padding: 0;
-    border-right: 1px solid #e5e5e5;
+
 
 }
 #recepty li a{
@@ -120,8 +120,8 @@ body {
     border-bottom: 1px solid #e3e3e3;
     margin-left: 25px!important;
 }
-#left-menu{
-    padding-left: 0;
+#left_sidebar{
+    padding-right: 0!important;
 }
 .margin-bottom{
     margin-bottom: 10px;
@@ -169,10 +169,7 @@ body {
 
     padding-bottom: 10px;
 }
-#left_sidebar{
-    border-left: 1px solid #e3e3e3;
 
-}
 .gl_size{
   font-size: 1.3em!important;
     color:#c82c28;
@@ -192,8 +189,8 @@ body {
     width:97%;
     background-color:#c82c28 ;
     color: white;
-    margin-left: 15px;
-    margin-bottom: 20px;
+    margin:0 15px 20px 0;
+
     height: 2em;
 }
 #caret_left_menu{
@@ -201,5 +198,14 @@ body {
     right:5%;
     top:50%;
     margin-right: 10px;
+
+}
+#content{
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+}
+
+#pagination {
+    text-align: center;
 
 }
