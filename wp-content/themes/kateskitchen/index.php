@@ -1,65 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <title>Катина Кухня!</title>
-    <link href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet">
-
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div  id="header" class="col-md-12 ">
-                <img id="logobook" src="<?php bloginfo( 'template_url' ); ?>/img/book.png">
-                <div id="namesite">
-                    <h1><a href="/" title="Главная">Катина Кухня</a></h1>
-                    <p id="slogan">от New York Times Cook Book</p>
-                </div>
-                <div  id="search" class="col-md-3 col-xs-7 col-sm-6">
-                    <div class="input-group">
-                        <input  id="input_search" type="text" class="form-control">
-                          <span class="input-group-btn">
-                            <button id="submit_search" class="btn btn-default" type="button">Поиск</button>
-                          </span>
-                    </div>
-                </div>
-
-
-                <img id="logocup" src="<?php bloginfo( 'template_url' ); ?>/img/cup.jpg">
-                <div id="langselector">
-                    <a href="http://kateskitchen.ru" id="ru_lang" class="lang_active">ru</a> | <a href="http://kateskitchen.us" id="en_lang" class="lang_inactive">en</a>
-                </div>
-            </div>
-        </div>
-        <div class="row margin-bottom">
-            <div class="col-md-12 dotted"></div>
-        </div>
-        <div class="row margin-bottom">
-            <div class="navbar">
-            <div class="container">
-                <button type="button" class="navbar-toggle button_head_menu"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        >
-
-                    <i class="glyphicon glyphicon-align-justify gl_size"></i>
-                </button>
-                <ul id="navbar" class="nav  nav-pills  pull-left collapse navbar-collapse">
-                    <li class="active"><a href="#">Главная</a></li>
-                    <li><a href="#">О проекте</a></li>
-                    <li><a href="#">Рецепты</a></li>
-                    <li><a href="#">Друзья и коллеги</a></li>
-                    <li><a href="#">Контакты</a></li>
-
-                </ul>
-            </div>
-            </div>
-
-
-
-        </div>
+<?php get_header(); ?> 
         <div class="row">
             <div class="col-md-3" id="left_sidebar">
                 <button type="button" id="button_left_menu" class="btn btn-default title1 red btn-lg">Рецепты<span id="caret_left_menu" class="caret"></span></button>
@@ -67,7 +6,7 @@
 
                     <h2 class="title1 red" id="title_recepty">Рецепты</h2>
                     <span class="glyphicon glyphicon-star-empty left_menu"></span>
-                    <li><a href="#">Напитки, Коктейли, Пунши и Гроги</a></li>
+                    <li><a href="<?php echo get_category_link(12); ?>">Напитки, Коктейли, Пунши и Гроги</a></li>
                     <li class="divider"></li>
                     <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="#">Горячие закуски, Легкие закуски и Маленькие блюда</a></li>
@@ -146,13 +85,15 @@
                         Свежие рецепты этой недели
                     </h2>
                     <div class="dotted"></div>
-                    <div class="post">
-                        <h3>ОВСЯНОЕ ПЕЧЕНЬЕ</h3>
-                        <img src="<?php bloginfo( 'template_url' ); ?>/img/pre_50.JPG" class="foto_prev">
-                        <p>Хрустящие, полезные, вкусные и, безусловный плюс, легкие в приготовление печенья!</p>
-                        <p class="post_amount_photo">17 фото</p>
-                        <p class="amount_comment">»Подробнее  1 Comment</p>
+                    <?php if(have_posts()) : ?>
+						<?php while(have_posts()) : the_post(); ?>
+					<div class="post">
+					
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <?php the_content(); ?>
                     </div>
+					<?php endwhile; ?>			
+					<?php endif; ?>
                     <div class="post">
                         <h3>ПЕЧЕНЬЕ С МАННОЙ КРУПОЙ "ЗАГАДКА"</h3>
                         <img src="<?php bloginfo( 'template_url' ); ?>/img/pre_50.JPG" class="foto_prev">
@@ -206,18 +147,4 @@
             </div>
 
         </div>
-        <div class="row">
-            <div class="col-md-12" id="footer">
-                <a href="http://www.facebook.com/KateskitchenKatinaKuhnya" ><img src="img/994.png" title="Я в Facebook!"></a>
-                <a href="http://vkontakte.ru/"><img src="img/993.png" ></a>
-            </div>
-
-
-        </div>
-    </div>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/jquery-1.11.3.min.js"></script>
-
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap.min.js"></script>
-    <script src="<?php bloginfo( 'template_url' ); ?>/js/myjs.js"></script>
-</body>
-</html>
+     <?php get_footer(); ?>    
