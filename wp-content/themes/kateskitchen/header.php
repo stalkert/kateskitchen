@@ -30,7 +30,10 @@
                 <img id="logocup" src="<?php bloginfo( 'template_url' ); ?>/img/cup.jpg">
                 <div id="langselector">
                     <a href="http://kateskitchen.ru" id="ru_lang" class="lang_active">ru</a> | <a href="http://kateskitchen.us" id="en_lang" class="lang_inactive">en</a>
-                </div>
+                <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('ruen')) : ?>
+					
+				<?php endif; ?>
+				</div>
             </div>
         </div>
         <div class="row margin-bottom">

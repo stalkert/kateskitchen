@@ -4,7 +4,7 @@
 $(document).ready(function(){
     $("#head_li").removeClass("active");        // Удаляем активную главную страницу при переходе на другие страницы
     var url = locationHref();                   // вычисляем текущий href
-    if (url ==="http://kateskitchen.ru/ru/"){   //Проверяем на главной мы или нрет
+    if (url ==="http://kateskitchen.ru/" ||url ==="http://kateskitchen.ru/en/"){   //Проверяем на главной мы или нрет
         $("#head_li").addClass("active");       // если да то подсвечиваем меню
     }
 
