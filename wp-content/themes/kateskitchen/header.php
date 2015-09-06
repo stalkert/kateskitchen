@@ -14,7 +14,7 @@
             <div  id="header" class="col-md-12 ">
                 <img id="logobook" src="<?php bloginfo( 'template_url' ); ?>/img/book.png">
                 <div id="namesite">
-                    <h1><a href="/" title="Главная">Катина Кухня</a></h1>
+                    <h1><a href="/" title="Главная"><?php bloginfo( 'name' ); ?></a></h1>
                     <p id="slogan">от New York Times Cook Book</p>
                 </div>
                 <div  id="search" class="col-md-3 col-xs-7 col-sm-6">
