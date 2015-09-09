@@ -33,6 +33,7 @@
 					
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         <?php the_content(); ?>
+						<?php comments_template('', true); ?>
                     </div>
 					<?php endwhile; ?>			
 					<?php endif; ?>
@@ -65,7 +66,7 @@
                 </div>
                 <div>
                     <h3> Последние комментарии</h3>
-                    <div id="recentcomments" class="dsq-widget">
+                     <div id="recentcomments" class="dsq-widget">
 						<script type="text/javascript" src="http://kateskitchenru.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200">
 						</script>
 					</div>

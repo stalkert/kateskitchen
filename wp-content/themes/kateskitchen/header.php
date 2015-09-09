@@ -28,12 +28,12 @@
 
 
                 <img id="logocup" src="<?php bloginfo( 'template_url' ); ?>/img/cup.jpg">
-                <div id="langselector">
-                    <a href="http://kateskitchen.ru" id="ru_lang" class="lang_active">ru</a> | <a href="http://kateskitchen.us" id="en_lang" class="lang_inactive">en</a>
+                
+                    
                 <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('ruen')) : ?>
 					
 				<?php endif; ?>
-				</div>
+				
             </div>
         </div>
         <div class="row margin-bottom">
@@ -50,8 +50,8 @@
                     <i class="glyphicon glyphicon-align-justify gl_size"></i>
                 </button>
                 <ul id="navbar" class="nav  nav-pills  pull-left collapse navbar-collapse">
-                    <li id="head_li" ><a href="<?php bloginfo( 'url' ); ?>">Главная</a></li>
-					<?php wp_list_pages(array('title_li' => '',)); ?> 
+                    <li id="head_li" ><a href="<?php bloginfo( 'url' ); ?>"><?php  echo get_the_title(50);?></a></li>
+					<?php wp_list_pages(array('title_li' => '','exclude'=>50)); ?> 
 
                 </ul>
             </div>

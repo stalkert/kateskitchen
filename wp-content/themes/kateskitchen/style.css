@@ -168,13 +168,26 @@ body {
     color:#c82c28;
     margin-left: 20px;
 }
-#langselector {
+#qtranslate-2{
     position: absolute;
-    bottom: 0.3em;
+    bottom: -0.8em;
     right: 10px;
     color: #917972;
+	list-style: none;
 }
-#ru_lang, #en_lang {
+#qtranslate-2-chooser{
+	list-style: none;
+	display:inline-block;
+}
+#qtranslate-2-chooser .active a{
+padding-bottom: 3px!important;
+}
+#qtranslate-2-chooser li{
+	float: left;
+	margin-left: 5px;
+	b: 3px;
+}
+#qtranslate-2 ul li a {
     font-size: 1.3em;
     font-weight: bold;
 }
