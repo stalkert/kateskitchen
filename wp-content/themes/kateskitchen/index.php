@@ -6,20 +6,36 @@
                      <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        
                     </ol>
                     <div class="carousel-inner">
-                        <div class="active item"><img src="<?php bloginfo( 'template_url' ); ?>/img/50.jpg"></div>
-                        <div class="item"><img src="<?php bloginfo( 'template_url' ); ?>/img/60.jpg"></div>
-                        <div class="item"><img src="<?php bloginfo( 'template_url' ); ?>/img/70.jpg"></div>
+					
+                        <div class="active item conteiner-carusel">
+							<?php kateskit_get_media(57);?>
+							<div class="carousel-caption text-carusel">
+								<p><?php echo  get_post_meta(57,'text_slider1',true);?></p>
+							</div>
+						
+						
+						</div>
+						
+                        <div class="item conteiner-carusel">
+							<?php kateskit_get_media(69);?>
+							<div class="carousel-caption text-carusel">
+								<p><?php echo  get_post_meta(69,'text_slider2',true);?></p>
+							</div>
+						</div>
+                        
                     </div>
-                    <!-- Carousel nav -->
+					<div id="text_slider">
+					</div>
+                    <!-- Carousel nav 
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                     </a>
                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+                    </a>-->
                 </div>
 
                 <div>

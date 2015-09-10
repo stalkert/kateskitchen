@@ -245,3 +245,21 @@ padding-bottom: 3px!important;
     margin:20px;
 
 }
+.conteiner-carusel{
+position: relative;
+}
+.text-carusel{
+	position: absolute;
+	height: 100%;
+	width:30%;
+	left: 0px;
+	background-color: rgba(102,102,102,0.5);
+	
+	padding-bottom: 0px!important;
+	bottom: 0px;
+}
+.text-carusel p{
+	font-weight: bold;
+} 
+
+

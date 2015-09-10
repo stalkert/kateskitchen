@@ -59,6 +59,13 @@ function mytheme_comment($comment, $args, $depth)
 		break;
 	endswitch;
 }
-
-
-
+?>
+<?php
+function kateskit_get_media($media_number){
+	$media = get_attached_media( 'image', $media_number );
+	
+	$media = array_shift( $media);
+	$image_url = $media->guid;
+	echo '<img src="'. $image_url .'" />';
+}
+?>

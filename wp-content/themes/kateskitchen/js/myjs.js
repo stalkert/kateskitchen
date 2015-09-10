@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     });
     $('.carousel').carousel({
-        interval: 6000
+        interval: 10000
     });
     $(".button_head_menu").click(function(){
         $("#navbar").addClass("nav-stacked");

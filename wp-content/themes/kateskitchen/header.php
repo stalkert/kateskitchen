@@ -51,7 +51,7 @@
                 </button>
                 <ul id="navbar" class="nav  nav-pills  pull-left collapse navbar-collapse">
                     <li id="head_li" ><a href="<?php bloginfo( 'url' ); ?>"><?php  echo get_the_title(50);?></a></li>
-					<?php wp_list_pages(array('title_li' => '','exclude'=>50)); ?> 
+					<?php wp_list_pages(array('title_li' => '','include'=>'16,18,22,24')); ?> 
 
                 </ul>
             </div>
