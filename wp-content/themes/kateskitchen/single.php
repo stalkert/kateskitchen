@@ -2,44 +2,30 @@
         <div class="row">
             <?php get_sidebar();?>
             <div class="col-md-6" id="content">
-                <div id="carousel-example-generic" class="carousel slide">
-                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="active item"><img src="<?php bloginfo( 'template_url' ); ?>/img/50.jpg"></div>
-                        <div class="item"><img src="<?php bloginfo( 'template_url' ); ?>/img/60.jpg"></div>
-                        <div class="item"><img src="<?php bloginfo( 'template_url' ); ?>/img/70.jpg"></div>
-                    </div>
-                    <!-- Carousel nav -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
+                
 
-                <div>
-                    <h2>
-                        Свежие рецепты этой недели
-                    </h2>
-                    <div class="dotted"></div>
-                    <?php if(have_posts()) : ?>
-						<?php while(have_posts()) : the_post(); ?>
-					<div class="post">
-					
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <?php the_content(); ?>
-						<?php comments_template('', true); ?>
+					<div>
+                    
+						<div class="dotted"></div>
+						<?php if(have_posts()) : ?>
+							<?php while(have_posts()) : the_post(); ?>
+						<div class="post">
+						
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<ul class="bxslider">
+									<?php echo  get_post_meta($post->ID,'slideshow',true);?>
+								</ul>
+								
+							</div>
+							<?php echo  get_post_meta($post->ID,'text_recept',true);?>
+							<div class="otstup"></div>
+							<?php comments_template('', true); ?>
                     </div>
 					<?php endwhile; ?>			
 					<?php endif; ?>
                     
 
-                </div>
+                
                 <div id="pagination">
                     <ul class="pagination pagination-lg">
                         <li><a href="#">&laquo;</a></li>

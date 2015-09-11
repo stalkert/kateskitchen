@@ -261,5 +261,13 @@ position: relative;
 .text-carusel p{
 	font-weight: bold;
 } 
-
-
+.bx-wrapper img {
+	margin: 0 auto;
+	height: auto!important;
+}
+.bxslider li{
+	margin-left:-39px;
+}
+.otstup{
+margin-bottom:40px;
+}

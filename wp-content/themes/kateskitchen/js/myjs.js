@@ -2,6 +2,15 @@
  * Created by ITaranenko on 8/17/2015.
  */
 $(document).ready(function(){
+	$('.bxslider img').wrap('<li></li>');
+	//$('#post-slider img:not(:first)').wrap('<div class="item"></div>')
+	$('.bxslider').bxSlider({
+	  mode: 'fade',
+	  adaptiveHeight: true,
+	  
+		captions: true
+	});
+	
     $("#head_li").removeClass("active");        // ”дал€ем активную главную страницу при переходе на другие страницы
     var url = locationHref();                   // вычисл€ем текущий href
     if (url ==="http://kateskitchen.ru/" ||url ==="http://kateskitchen.ru/en/"){   //ѕровер€ем на главной мы или нрет
@@ -18,6 +27,7 @@ $(document).ready(function(){
     $('.carousel').carousel({
         interval: 10000
     });
+	
     $(".button_head_menu").click(function(){
         $("#navbar").addClass("nav-stacked");
     });
@@ -25,6 +35,7 @@ $(document).ready(function(){
     $("#button_left_menu").click(function(){
         $("#recepty").slideToggle(600);
     });
+	
     function windowSize(){
         if($(window).width()>=750){
             $("#navbar").removeClass("nav-stacked");

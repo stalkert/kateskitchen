@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
     <link href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.min.css" rel="stylesheet">
-
+	<link href="<?php bloginfo( 'template_url' ); ?>/jquery.bxslider.css" rel="stylesheet">
     <link href="<?php bloginfo( 'stylesheet_url' ); ?>" rel="stylesheet">
 	<?php wp_head();?>
 </head>
