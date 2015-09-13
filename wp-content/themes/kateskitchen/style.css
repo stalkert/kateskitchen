@@ -27,6 +27,9 @@ Version: 1.0
         left:50%!important;
         margin-left:-25%;
     }
+	#s{
+	width:50%!important;
+	}
 }
 body {
     margin: 0;
@@ -75,10 +78,11 @@ body {
     top:10em;
 
 }
-#input_search{
+#input_search,#s{
     height: 25px;
+	
 }
-#submit_search{
+#submit_search,#searchsubmit{
     height: 25px;
     padding: 0 5px;
     background-color:#c82c28;
@@ -271,3 +275,30 @@ position: relative;
 .otstup{
 margin-bottom:40px;
 }
+#search li{
+	list-style:none;
+
+}
+#searchform div label{
+	display:none;
+}
+.input-group span{
+	position:absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#searchform div{
+	float: left;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+#searchform div input{
+	float:left;
+}
+#s{
+	width:70%;
+}
+

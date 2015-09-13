@@ -2,6 +2,10 @@
  * Created by ITaranenko on 8/17/2015.
  */
 $(document).ready(function(){
+	
+	$("#searchform div label").remove();
+	
+	$("#searchsubmit").wrap('<span></span>').addClass('btn btn-default');
 	$('.bxslider img').wrap('<li></li>');
 	//$('#post-slider img:not(:first)').wrap('<div class="item"></div>')
 	$('.bxslider').bxSlider({

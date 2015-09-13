@@ -18,12 +18,15 @@
                     <p id="slogan">от New York Times Cook Book</p>
                 </div>
                 <div  id="search" class="col-md-3 col-xs-7 col-sm-6">
-                    <div class="input-group">
+				<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('search')) : ?>
+					
+				<?php endif; ?>
+                    <!--<div class="input-group">
                         <input  id="input_search" type="text" class="form-control">
                           <span class="input-group-btn">
                             <button id="submit_search" class="btn btn-default" type="button">Поиск</button>
                           </span>
-                    </div>
+                    </div>-->
                 </div>
 
 

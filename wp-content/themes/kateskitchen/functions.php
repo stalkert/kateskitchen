@@ -3,9 +3,10 @@
 	register_nav_menus(
 		array('header-menu'=>'header-menu1','sidebar-menu'=>'sidebar-menu1')
 	);
-if(function_exists('register_sidebar'))
-	register_sidebar(array('name' => 'ruen')); // региструем сайдбар
-
+if(function_exists('register_sidebar')){
+	register_sidebar(array('name' => 'ruen'));
+	register_sidebar(array('name'=>'search')); // региструем сайдбар
+}
 function disqus_embed($disqus_shortname) {
     global $post;
     wp_enqueue_script('disqus_embed', 'http://'.$disqus_shortname.'.disqus.com/embed.js');
