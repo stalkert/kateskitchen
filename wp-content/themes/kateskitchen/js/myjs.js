@@ -2,7 +2,8 @@
  * Created by ITaranenko on 8/17/2015.
  */
 $(document).ready(function(){
-	
+	$(".bxslider p img").unwrap();
+	$(".bxslider p").remove();
 	$("#searchform div label").remove();
 	
 	$("#searchsubmit").wrap('<span></span>').addClass('btn btn-default');
