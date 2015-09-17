@@ -2,7 +2,7 @@
         <div class="row">
             <?php get_sidebar();?>
             <div class="col-md-6" id="content">
-                <div id="carousel-example-generic" class="carousel slide">
+                <div id="carousel-example-generic" class="carousel slide post-carousel">
                      <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -48,7 +48,8 @@
 					<div class="post">
 					
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <?php the_content(); ?>
+                        <div id="content-post"><?php the_content(); ?></div>
+						<div class="link-post-and-comment"><a href="<?php the_permalink(); ?>">&gt&gt <?php echo  get_post_meta(176,'details',true);?></a> &nbsp&nbsp&nbsp<a href="<?php the_permalink(); ?>"><?php $comments_count = wp_count_comments($post->ID); echo $comments_count->approved;?> Comments</a></div>
                     </div>
 					<?php endwhile; ?>			
 					<?php endif; ?>

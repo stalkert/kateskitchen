@@ -6,12 +6,20 @@
 
 					<div>
                     
-						<div class="dotted"></div>
+						
 						<?php if(have_posts()) : ?>
 							<?php while(have_posts()) : the_post(); ?>
 						<div class="post">
 						
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<div class="dotted"></div>
+								<div id="amanda_kate">
+									<?php echo  get_post_meta($post->ID,'amanda_kate',true);?>
+									<br>
+									<p class="tag-recepty"> <?php  echo get_the_title(18);?>:</p>
+									<p class="tag-category"> <?php the_category(', '); ?></p>
+								</div>
+								
 								<ul class="bxslider">
 									<?php echo  get_post_meta($post->ID,'slideshow',true);?>
 								</ul>

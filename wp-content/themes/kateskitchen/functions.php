@@ -1,5 +1,5 @@
 <?php
-
+remove_filter('the_content', 'wpautop');
 	register_nav_menus(
 		array('header-menu'=>'header-menu1','sidebar-menu'=>'sidebar-menu1')
 	);
@@ -69,4 +69,6 @@ function kateskit_get_media($media_number){
 	$image_url = $media->guid;
 	echo '<img src="'. $image_url .'" />';
 }
+
+
 ?>
