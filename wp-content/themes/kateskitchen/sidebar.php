@@ -4,7 +4,7 @@
 
                     <h2 class="title1 red" id="title_recepty"><?php  echo get_the_title(18);?></h2>
                     <span class="glyphicon glyphicon-star-empty left_menu"></span>
-                    <li><a href="<?php echo get_category_link(12); ?>"><?php echo get_cat_name(12); ?><?php $kateskit_category_count=get_category(12)->category_count; if ($kateskit_category_count>0){echo "&nbsp(".$kateskit_category_count.")";}?></li>
+                    <li><a href="<?php echo get_category_link(12); ?>"><?php echo get_cat_name(12); ?><?php $kateskit_category_count=get_category(12)->category_count; if ($kateskit_category_count>0){echo "&nbsp(".$kateskit_category_count.")";}?></a></li>
                     <li class="divider"></li>
                     <span class="glyphicon glyphicon-star-empty left_menu"></span>
                     <li><a href="<?php echo get_category_link(14); ?>"><?php echo get_cat_name(14); ?><?php $kateskit_category_count=get_category(14)->category_count; if ($kateskit_category_count>0){echo "&nbsp(".$kateskit_category_count.")";}?></a></li>

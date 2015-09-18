@@ -34,26 +34,12 @@
                     
 
                 
-                <div id="pagination">
-                    <ul class="pagination pagination-lg">
-                        <li><a href="#">&laquo;</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </div>
+                
             </div>
             <div class="col-md-3" id="right_sidebar">
-                <div>
-                    <h2 class="title1">О проекте</h2>
-                    <p>Сайт Катина Кухня посвящен книге  The Essential New York Times Cook Book .</p>
-                    <p>По рецептам которой, я с друзьями готовлю и рассказываю об этом.</p>
-                    <p>Смотрите, готовьте, комментируйте  и  ешьте с любовью - будет вкуснее!</p>
-                    <img src="<?php bloginfo( 'template_url' ); ?>/img/p2.jpg" id="kate">
-                    <p>Подробнее о проекте можно прочитать тут.</p>
+                <div  id="about-us">
+                    <h2 class="title1"><?php  echo get_the_title(16);?></h2>
+                    <?php echo  get_post_meta(176,'about_us',true);?>
                 </div>
                 <div>
                     <h2 class="title1">Лайкнуть</h2>

@@ -332,3 +332,24 @@ margin-right:20px;
 	bottom: 20px;
 
 }
+.bx-pager{
+		bottom:-55px!important;
+}
+.current{
+background-color:#c0c0c0!important;
+}
+.post h3:first-child{
+	margin-top: 0px;
+}
+#about-us{
+	margin-bottom: 20px;
+}
+#about-us img{
+	width:100%;
+	height:auto;
+	margin-bottom: 15px;
+}
+.page-content img{
+	width:100%;
+	height:auto;
+}	
