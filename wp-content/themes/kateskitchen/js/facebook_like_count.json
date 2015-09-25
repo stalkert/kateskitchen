@@ -1,0 +1,4 @@
+{
+	id: "16",
+	title: "<?php the_title(); ?>"
+}

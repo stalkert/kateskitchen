@@ -9,6 +9,16 @@
 	<?php wp_head();?>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.4";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
     <div class="container">
         <div class="row">
             <div  id="header" class="col-md-12 ">
@@ -54,7 +64,7 @@
                 </button>
                 <ul id="navbar" class="nav  nav-pills  pull-left collapse navbar-collapse">
                     <li id="head_li" ><a href="<?php bloginfo( 'url' ); ?>"><?php  echo get_the_title(50);?></a></li>
-					<?php wp_list_pages(array('title_li' => '','include'=>'16,18,22,24')); ?> 
+					<?php wp_list_pages(array('title_li' => '','include'=>'16,22,24')); ?> 
 
                 </ul>
             </div>

@@ -42,6 +42,7 @@ $(document).ready(function(){
         $("#recepty").slideToggle(600);
     });
 	
+	
     function windowSize(){
         if($(window).width()>=750){
             $("#navbar").removeClass("nav-stacked");
@@ -59,5 +60,9 @@ $(document).ready(function(){
         var url = window.location.href;
         return url;
     }
-
+	
+			
+			
+			
+		
 });

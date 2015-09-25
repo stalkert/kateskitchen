@@ -149,11 +149,14 @@ body {
     margin-bottom: 10px;
 }
 .title1{
-    margin: 0 0 10px 0 ;
-    padding: 0 0 0 5px;
+    margin: 20px 0 10px 0 ;
+    
     color: #347b0b;
     font-size: 1.5em;
     font-weight: normal;
+}
+#about-us .title1{
+	margin-top: 0px;
 }
 #kate{
     width: 100%;
@@ -248,9 +251,10 @@ padding-bottom: 3px!important;
 #footer a{
     display:inline-block;
 }
-#footer{
+#footer,#planet-earth{
     text-align: center;
-    margin:20px;
+    margin-top:20px;
+	margin-bottom: 20px;
 
 }
 .conteiner-carusel{
@@ -309,6 +313,7 @@ margin-bottom:40px;
 }
 #amanda_kate{
 	margin-bottom: 40px;
+	margin-top: 20px;
 }
 .tag-recepty{
 	font-weight:bold;
@@ -352,4 +357,22 @@ background-color:#c0c0c0!important;
 .page-content img{
 	width:100%;
 	height:auto;
-}	
+}
+#planet-earth{
+	text-align: center;
+}
+.clear-both{
+	clear:both;
+}
+#views-post{
+	float:right;
+}
+#right_sidebar>div{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e3e3e3;
+
+}
+#most_viewed_post ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
