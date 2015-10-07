@@ -380,3 +380,7 @@ background-color:#c0c0c0!important;
 	list-style-type: none;
 	padding-left: 0px;
 }
+#error-404{
+	width: 100%;
+	height: auto;
+}
