@@ -62,9 +62,11 @@
 					<div class="post">
 					
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <div id="content-post"><?php the_content(); ?></div>
-						<div class="link-post-and-comment"><a href="<?php the_permalink(); ?>">&gt&gt <?php echo  get_post_meta(176,'details',true);?></a> &nbsp&nbsp&nbsp<a href="<?php the_permalink(); ?>"><?php $comments_count = wp_count_comments($post->ID); echo $comments_count->approved;?> Comments</a></div>
-                    </div>
+                        <div class="content-post"><?php the_content(); ?></div>
+						
+							<div class="link-post-and-comment"><a href="<?php the_permalink(); ?>">&gt&gt <?php echo  get_post_meta(176,'details',true);?></a> &nbsp&nbsp&nbsp<a href="<?php the_permalink(); ?>"><?php $comments_count = wp_count_comments($post->ID); echo $comments_count->approved;?> Comments</a></div>
+						
+					</div>
 					<?php endwhile; ?>			
 					<?php endif; ?>
                     
