@@ -44,13 +44,18 @@ $(document).ready(function(){
 	
 	
     function windowSize(){
-        if($(window).width()>=750){
+        if(window.innerWidth >= 992){
             $("#navbar").removeClass("nav-stacked");
             $("#title_recepty").removeClass("dysplay_none");
             $("#button_left_menu").addClass("dysplay_none").css("display","none");
             $("#recepty").slideDown(0).removeClass("dysplay_none");
-        }else {
+        }else if(window.innerWidth<750){
             $("#navbar").addClass("nav-stacked");
+            $("#title_recepty").addClass("dysplay_none");
+            $("#button_left_menu").removeClass("dysplay_none").css("display","block");
+            $("#recepty").slideUp(0).addClass("dysplay_none");
+        }else {
+            $("#navbar").removeClass("nav-stacked");
             $("#title_recepty").addClass("dysplay_none");
             $("#button_left_menu").removeClass("dysplay_none").css("display","block");
             $("#recepty").slideUp(0).addClass("dysplay_none");
