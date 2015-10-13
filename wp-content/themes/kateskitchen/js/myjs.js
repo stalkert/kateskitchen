@@ -44,12 +44,12 @@ $(document).ready(function(){
 	
 	
     function windowSize(){
-        if(window.innerWidth >= 992){
+        if(document.documentElement.clientWidth >= 992 || window.innerWidth >= 992 ){
             $("#navbar").removeClass("nav-stacked");
             $("#title_recepty").removeClass("dysplay_none");
             $("#button_left_menu").addClass("dysplay_none").css("display","none");
             $("#recepty").slideDown(0).removeClass("dysplay_none");
-        }else if(window.innerWidth<750){
+        }else if(document.documentElement.clientWidth < 750 || window.innerWidth < 750){
             $("#navbar").addClass("nav-stacked");
             $("#title_recepty").addClass("dysplay_none");
             $("#button_left_menu").removeClass("dysplay_none").css("display","block");
